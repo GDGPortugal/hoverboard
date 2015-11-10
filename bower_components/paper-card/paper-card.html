@@ -13,7 +13,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
 
 <!--
-Material design: [Cards](https://www.google.com/design/spec/components/cards.html)
+Material Design: <a href="http://www.google.com/design/spec/components/cards.html">Cards</a>
 
 `paper-card` is a container with a drop shadow.
 
@@ -24,12 +24,6 @@ Example:
       <div class="card-actions">
         <paper-button>Some action</paper-button>
       </div>
-    </paper-card>
-
-Example - top card image:
-
-    <paper-card heading="Card Title" image="/path/to/image.png">
-      ...
     </paper-card>
 
 ### Accessibility
@@ -58,7 +52,7 @@ Custom property | Description | Default
 
 <dom-module id="paper-card">
   <template>
-    <style include="paper-material">
+    <style>
       :host {
         display: inline-block;
         position: relative;
@@ -69,6 +63,11 @@ Custom property | Description | Default
         @apply(--paper-card);
       }
 
+      paper-material {
+        border-radius: inherit;
+        @apply(--layout-fit);
+      }
+
       /* IE 10 support for HTML5 hidden attr */
       [hidden] {
         display: none !important;
@@ -76,9 +75,6 @@ Custom property | Description | Default
 
       .header {
         position: relative;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-        overflow: hidden;
         @apply(--paper-card-header);
       }
 
@@ -115,6 +111,8 @@ Custom property | Description | Default
         @apply(--paper-card-actions);
       }
     </style>
+
+    <paper-material animated$="[[animatedShadow]]" elevation="[[elevation]]"></paper-material>
 
     <div class="header">
       <img hidden$="[[!image]]" src="[[image]]">
@@ -156,8 +154,7 @@ Custom property | Description | Default
        */
       elevation: {
         type: Number,
-        value: 1,
-        reflectToAttribute: true
+        value: 1
       },
 
       /**
@@ -167,17 +164,6 @@ Custom property | Description | Default
       animatedShadow: {
         type: Boolean,
         value: false
-      },
-
-      /**
-       * Read-only property used to pass down the `animatedShadow` value to
-       * the underlying paper-material style (since they have different names).
-       */
-      animated: {
-        type: Boolean,
-        reflectToAttribute: true,
-        readOnly: true,
-        computed: '_computeAnimated(animatedShadow)'
       }
     },
 
@@ -191,10 +177,6 @@ Custom property | Description | Default
       if (image)
         cls += ' over-image';
       return cls;
-    },
-
-    _computeAnimated: function(animatedShadow) {
-      return animatedShadow;
     }
   });
 </script>

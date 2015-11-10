@@ -201,8 +201,6 @@ MediaUploader.prototype.onContentUploadSuccess_ = function(e) {
     this.extractRange_(e.target);
     this.retryHandler.reset();
     this.sendFile_();
-  } else {
-    this.onContentUploadError_(e);
   }
 };
 
