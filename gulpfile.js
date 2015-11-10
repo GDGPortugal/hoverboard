@@ -72,10 +72,10 @@ gulp.task('jshint', function () {
 // Optimize Images
 gulp.task('images', function () {
   return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin({
+    /*.pipe($.cache($.imagemin({
       progressive: true,
       interlaced: true
-    })))
+    })))*/
     .pipe(gulp.dest('dist/images'))
     .pipe($.size({title: 'images'}));
 });
@@ -118,11 +118,11 @@ gulp.task('fonts', function () {
     .pipe($.size({title: 'fonts'}));
 });
 
-gulp.task('2014', function () {
-  return gulp.src(['app/2014/**'])
+/*gulp.task('2014', function () {
+  return gulp.src(['app/2014/!**'])
     .pipe(gulp.dest('dist/2014'))
     .pipe($.size({title: '2014'}));
-});
+});*/
 
 gulp.task('assets', function () {
   return gulp.src(['app/assets/**'])
@@ -201,7 +201,9 @@ gulp.task('precache', function (callback) {
 
 gulp.task('gh-pages', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+          remoteUrl: 'https://<youraccesstokenhere>@github.com/GDGPortugal/summit.gdgportugal.xyz.git'
+      }));
 });
 
 // Clean Output Directory
@@ -258,7 +260,7 @@ gulp.task('serve:dist', ['default'], function () {
     // Run as an https by uncommenting 'https: true'
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
-    // https: true,
+    //https: true,
     server: 'dist'
   });
 });
@@ -269,7 +271,7 @@ gulp.task('default', ['clean'], function (cb) {
     ['copy', 'styles'],
     'elements',
     ['jshint', 'images', 'fonts', 'html'],
-    'vulcanize', 'precache', '2014', 'assets', 'data', 'posts',
+    'vulcanize', /*'precache', '2014',*/ 'assets', 'data', 'posts',
     cb);
 });
 
