@@ -1,5 +1,6 @@
 <dom-module id="app-data">
     <template>
+        <iron-ajax auto url="[[configSource]]" handle-as="json" last-response="{{config}}"></iron-ajax>
         <iron-ajax auto url="[[speakersSource]]" handle-as="json" last-response="{{speakers}}"></iron-ajax>
         <iron-ajax auto url="[[sessionsSource]]" handle-as="json" last-response="{{sessions}}"></iron-ajax>
         <iron-ajax auto url="[[postsSource]]" handle-as="json" last-response="{{posts}}"></iron-ajax>
@@ -12,6 +13,10 @@
     Polymer({
         is: 'app-data',
         properties: {
+            configSource: {
+                type: String,
+                value: '../../data/config.json'
+            },
             speakersSource: {
                 type: String,
                 value: '../../data/speakers.json'
@@ -31,6 +36,10 @@
             scheduleSource: {
                 type: String,
                 value: '../../data/schedule.json'
+            },
+            config: {
+                type: Object,
+                notify: true
             },
             speakers: {
                 type: Array,

@@ -33121,6 +33121,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             }
         </style></template></dom-module><dom-module id="app-data" assetpath="app-data/">
     <template>
+        <iron-ajax auto="" url="[[configSource]]" handle-as="json" last-response="{{config}}"></iron-ajax>
         <iron-ajax auto="" url="[[speakersSource]]" handle-as="json" last-response="{{speakers}}"></iron-ajax>
         <iron-ajax auto="" url="[[sessionsSource]]" handle-as="json" last-response="{{sessions}}"></iron-ajax>
         <iron-ajax auto="" url="[[postsSource]]" handle-as="json" last-response="{{posts}}"></iron-ajax>
@@ -33133,6 +33134,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     Polymer({
         is: 'app-data',
         properties: {
+            configSource: {
+                type: String,
+                value: '../../data/config.json'
+            },
             speakersSource: {
                 type: String,
                 value: '../../data/speakers.json'
@@ -33152,6 +33157,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             scheduleSource: {
                 type: String,
                 value: '../../data/schedule.json'
+            },
+            config: {
+                type: Object,
+                notify: true
             },
             speakers: {
                 type: Array,
@@ -34190,8 +34199,8 @@ Polymer({
                 color: inherit;
             }
         </style>
-        <google-map class="fit" zoom="15" latitude="49.809841" longitude="23.982805" styles="[[options]]" disable-zoom="" disable-default-ui="">
-            <google-map-marker latitude="49.809841" longitude="23.972805"></google-map-marker>
+        <google-map class="fit" zoom="16" latitude="40.1863787" longitude="-8.4082919" styles="[[options]]" disable-zoom="" disable-default-ui="">
+            <google-map-marker latitude="40.1863787" longitude="-8.4182919"></google-map-marker>
         </google-map>
         <div class="container card-container relative layout horizontal center-center">
             <div class="flex-3 hidden-xs"></div>
@@ -34201,10 +34210,12 @@ Polymer({
                         <div class="title">
                             <h4>Location</h4>
                         </div>
-                        <p>Pivdennyi Expo Center<br>Shchyretska St, 36, L'viv, Ukraine</p>
+                        <p>Departamento de Engenharia Informática da Universidade de Coimbra</p>
+                        <p>Universidade de Coimbra — Pólo II</p>
+                        <p>Pinhal de Marrocos, 3030-290 COIMBRA</p>
                     </div>
                     <div class="card-actions">
-                        <a class="bottom-link" href="https://www.google.com/maps/dir//49.8097687,23.9727791/@49.8099885,23.9727469,18z" target="_blank">
+                        <a class="bottom-link" href="https://www.google.pt/maps/dir//Departamento+de+Engenharia+Inform%C3%A1tica+-+FCTUC,+Universidade+de+Coimbra,+P%C3%B3lo+II+-+Pinhal+de+Marrocos,+3030-290+Coimbra/@40.1863787,-8.4182919,17z/data=!4m13!1m4!3m3!1s0xd22f9952aaf6517:0xd3822ec1d359eb52!2sDepartamento+de+Engenharia+Inform%C3%A1tica+-+FCTUC!3b1!4m7!1m0!1m5!1m1!1s0xd22f9952aaf6517:0xd3822ec1d359eb52!2m2!1d-8.4161032!2d40.1863787" target="_blank">
                             <paper-button on-tap="readMore">Get directions</paper-button>
                         </a>
                     </div>
