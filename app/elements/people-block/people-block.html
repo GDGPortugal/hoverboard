@@ -210,10 +210,12 @@
                                         </ul>
                                         <div class="bottom-image-text">
                                             <span class="people-name relative">[[person.name]]</span>
-                                            <div class="title">
-                                                <span>[[person.company]]</span>,
-                                                <span>[[person.country]]</span>
-                                            </div>
+                                            <template is="dom-if" if="[[person.company]]">
+                                                <div class="title">
+                                                    <span>[[person.company]]</span>,
+                                                    <span>[[person.country]]</span>
+                                                </div>
+                                            </template>
                                         </div>
                                     </div>
                                     <div class="card-content flex sessions">

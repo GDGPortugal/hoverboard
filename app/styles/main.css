@@ -9,17 +9,21 @@ h1, h2, h3, h4 {
     font-weight: 200;
 }
 paper-button.colorful {
-    color: #00BCD4;
+    color: #006600;
 }
 paper-button.white {
-    color: #fff;
+    color: #FFFF00;
 }
 paper-button[raised].colorful {
-    background: #00BCD4;
-    color: #FFFFFF;
+    background: #006600;
+    color: #FFFF00;
+}
+paper-button[focused].colorful {
+    background: #006600;
+    color: #FFFF00;
 }
 a, .anchor-like {
-    color: #00BCD4;
+    color: #006600;
     text-decoration: none;
 }
 strong, b {

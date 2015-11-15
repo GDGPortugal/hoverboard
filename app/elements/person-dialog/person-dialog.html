@@ -92,10 +92,12 @@
                 <div id="title" class="bottom title">[[person.name]]</div>
             </paper-toolbar>
             <div class="content">
-                <div class="subtitle">
-                    <span>[[person.company]]</span>,
-                    <span>[[person.country]]</span>
-                </div>
+                <template is="dom-if" if="[[person.company]]">
+                    <div class="subtitle">
+                        <span>[[person.company]]</span>,
+                        <span>[[person.country]]</span>
+                    </div>
+                </template>
                 <div class="card-content person-tags">
                     <span class="tags-label">Tags:</span>
                     <template is="dom-repeat" items="[[tags]]" as="tag">

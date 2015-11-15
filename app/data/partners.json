@@ -5,4 +5,23 @@
         "url": "https://www.google.com.ua/intl/en/about/",
         "logoUrl": "../images/partners/google.svg"
     }]
+},{
+    "title": "Organizers",
+    "logos": [{
+        "name": "GDG Lisbon",
+        "url": "https://plus.google.com/+GDG-Lisbon/posts",
+        "logoUrl": "../images/partners/google.svg"
+    },{
+        "name": "GDG Coimbra",
+        "url": "https://plus.google.com/103689036662302611912/posts",
+        "logoUrl": "../images/partners/google.svg"
+    },{
+        "name": "GDG Azores",
+        "url": "https://plus.google.com/114610816112896399994/posts",
+        "logoUrl": "../images/partners/google.svg"
+    },{
+        "name": "GDG Porto",
+        "url": "https://plus.google.com/b/108439465690358116375/108439465690358116375/posts",
+        "logoUrl": "../images/partners/gdg-porto.png"
+    }]
 }]
