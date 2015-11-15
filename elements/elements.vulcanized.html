@@ -19274,11 +19274,12 @@ Configuration:
 </script>
 <style is="custom-style" include="tags-color">
     :root {
-        --dark-primary-color: #0097A7;
-        --default-primary-color: #00BCD4;
-        --light-primary-color: #B2EBF2;
+        --dark-primary-color: #FF0000;
+        --default-primary-color: #FF3C3C;
+        --light-primary-color: #FF6E6E;
         --text-primary-color: #FFFFFF;
-        --accent-color: #FF4081;
+        --accent-color: #006600;
+        --paper-fab-keyboard-focus-background: #003e00;
         --primary-background-color: #B2EBF2;
         --primary-text-color: #212121;
         --secondary-text-color: #727272;
@@ -33800,9 +33801,9 @@ Polymer({
                     </div>
                 </div>
             </template>
-            <a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" class="block-link" target="_blank" onclick="ga('send', 'become-a-partner', 'button', 'click');">
-                <paper-button class="colorful" raised="">Become a partner</paper-button>
-            </a>
+            <!--<a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" class="block-link" target="_blank" onclick="ga('send', 'become-a-partner', 'button', 'click');">
+                <paper-button class="colorful" raised>Become a partner</paper-button>
+            </a>-->
         </div>
     </template>
 </dom-module>
@@ -34017,19 +34018,22 @@ Polymer({
                         <span class="link-block-title block">For visitors</span>
                         <ul class="link-block">
                             <li><a href="https://developers.google.com/" target="_blank">Google Developers</a></li>
-                            <!--<li><a href="http://gdg-devfest-ua.appspot.com/" target="_blank">GDG DevFest Ukraine 2013</a></li>-->
-                            <!--<li><a href="http://devfest.gdg.org.ua/2014/" target="_blank">GDG DevFest Ukraine 2014</a></li>-->
+                            <li><a href="https://plus.google.com/+GDG-Lisbon/posts" target="_blank">GDG Lisbon</a></li>
+                            <li><a href="https://plus.google.com/103689036662302611912/posts" target="_blank">GDG Coimbra</a></li>
+                            <li><a href="https://plus.google.com/114610816112896399994/posts" target="_blank">GDG Azores</a></li>
+                            <li><a href="http://gdgporto.xyz/" target="_blank">GDG Porto</a></li>
+                            <li><a href="http://devfest.gdgporto.xyz/" target="_blank">GDG DevFest Porto 2015</a></li>
                             <!--<li><a href="/code-of-conduct">Code of Conduct</a></li>-->
                         </ul>
                     </div>
-                    <div class="flex link-block-wrapper">
+                    <!--<div class="flex link-block-wrapper">
                         <span class="link-block-title block">For partners</span>
                         <ul class="link-block">
-                            <!--<li><a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" target="_blank">Partnership Proposition</a></li>-->
+                            &lt;!&ndash;<li><a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" target="_blank">Partnership Proposition</a></li>&ndash;&gt;
                             <li><a href="http://bit.ly/dfua-media" target="_blank">Media Kit</a></li>
                             <li><a href="https://docs.google.com/forms/d/1sOjuv7rv77JXq2jPBdh3tg-O4CV8HpLTED5cjJBxnG8/viewform" target="_blank">Media Accreditation</a></li>
                         </ul>
-                    </div>
+                    </div>-->
                     <div class="flex link-block-wrapper">
                         <span class="link-block-title block">Contact us</span>
                         <ul class="link-block">
@@ -34050,11 +34054,11 @@ Polymer({
                             </a>
                         </div>
                     </div>
-                    <div class="flex">
+                    <!--<div class="flex">
                         <span class="link-block-title block">Subscribe</span>
                         <span>No spam, only the latest news and updates!</span>
                         <mailchimp-subscribe url="{{url}}" name="{{name}}"></mailchimp-subscribe>
-                    </div>
+                    </div>-->
                 </nav>
             </div>
             <!-- <div class="line full-width"></div> -->
@@ -34369,7 +34373,7 @@ Polymer({
     </style>
     <template>
         <span class="post-meta">
-            <a href="social-post/%7B%7B_calculateUrl(author)]]" target="_blank">
+            <a href="{{_calculateUrl(author)}}" target="_blank">
                 <span>[[sign]]</span>
                 <span>[[author]]</span>
             </a>
@@ -34959,10 +34963,11 @@ Polymer({
             }
         </style>
         <div class="container relative layout vertical-horizontal">
-            <iron-ajax auto="" url="[[source]]" handle-as="json" on-response="feedLoaded"></iron-ajax>
+            <!--<iron-ajax auto url="[[source]]" handle-as="json" on-response="feedLoaded"></iron-ajax>-->
             <div class="flex-5">
-                <h4 class="heading">What's up <a href="https://www.google.com/#q=%23dfua">#dfua</a></h4>
-                <social-post id="post" author="[[author]]" text="[[text]]" when="[[when]]" canonical-url="https://twitter.com/" sign="@"></social-post>
+                <h4 class="heading">What's up? <a href="https://www.google.com/#q=%23gdgsummitpt" target="_blank">#gdgSummitPt</a></h4>
+
+                <!--<social-post id="post" author="[[author]]" text="[[text]]" when="[[when]]" canonical-url="https://twitter.com/" sign="@"></social-post>-->
             </div>
             <span class="flex"></span>
             <div class="flex-5 second-block">
@@ -35484,10 +35489,12 @@ Polymer({
                 <div id="title" class="bottom title">[[person.name]]</div>
             </paper-toolbar>
             <div class="content">
-                <div class="subtitle">
-                    <span>[[person.company]]</span>,
-                    <span>[[person.country]]</span>
-                </div>
+                <template is="dom-if" if="[[person.company]]">
+                    <div class="subtitle">
+                        <span>[[person.company]]</span>,
+                        <span>[[person.country]]</span>
+                    </div>
+                </template>
                 <div class="card-content person-tags">
                     <span class="tags-label">Tags:</span>
                     <template is="dom-repeat" items="[[tags]]" as="tag">
@@ -35787,10 +35794,12 @@ Polymer({
                                         </ul>
                                         <div class="bottom-image-text">
                                             <span class="people-name relative">[[person.name]]</span>
-                                            <div class="title">
-                                                <span>[[person.company]]</span>,
-                                                <span>[[person.country]]</span>
-                                            </div>
+                                            <template is="dom-if" if="[[person.company]]">
+                                                <div class="title">
+                                                    <span>[[person.company]]</span>,
+                                                    <span>[[person.country]]</span>
+                                                </div>
+                                            </template>
                                         </div>
                                     </div>
                                     <div class="card-content flex sessions">
@@ -36182,8 +36191,11 @@ Polymer({
             </div>
             <!--<span class="details">Tickets grant access to all conference sections, coffee breaks, lunch and party. Accommodation is NOT included in the ticket price.</span>-->
             <div class="flex">
-                <paper-button class="white border-button open-dialog-button" on-tap="openTicketsDialog">Buy a ticket</paper-button>
+                <paper-button class="colorful" on-tap="openTicketsDialog" raised="">Buy a ticket</paper-button>
             </div>
+            <!--<a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" class="block-link" target="_blank" onclick="ga('send', 'become-a-partner', 'button', 'click');">
+                <paper-button class="colorful" raised>Become a partner</paper-button>
+            </a>-->
         </div>
         <paper-dialog id="ticketsDialog" entry-animation="scale-up-animation" exit-animation="fade-out-animation" modal="">
             <div id="2event_tickets_widget" style="width: 640px; height: 300px; background:#fff;"></div>
