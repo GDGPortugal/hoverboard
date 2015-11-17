@@ -7,14 +7,15 @@
     }]
 },{
     "title": "Organizers",
+    "shownames":true,
     "logos": [{
         "name": "GDG Lisbon",
         "url": "https://plus.google.com/+GDG-Lisbon/posts",
-        "logoUrl": "../images/partners/google.svg"
+        "logoUrl": "../images/partners/gdg-lisbon.png"
     },{
         "name": "GDG Coimbra",
         "url": "https://plus.google.com/103689036662302611912/posts",
-        "logoUrl": "../images/partners/google.svg"
+        "logoUrl": "../images/partners/gdg-coimbra.png"
     },{
         "name": "GDG Azores",
         "url": "https://plus.google.com/114610816112896399994/posts",
