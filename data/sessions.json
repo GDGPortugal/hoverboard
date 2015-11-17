@@ -9,37 +9,6 @@
         "title": "Coffee break"
     },
     {
-        "id": 1004,
-        "title": "Morning coffee",
-        "description": "Coffeeeeeee!"
-    },
-    {
-        "id": 1005,
-        "title": "GDG DevFest Ukraine 2015 Opening",
-        "description": "Official start of the conference. Greatings from the organizers, sponsors and partners.",
-        "language": "en",
-        "complexity": "",
-        "presentation": "",
-        "video": ""
-    },
-    {
-        "id": 1006,
-        "title": "Afterparty & Networking",
-        "description": "Afterpaty is a great time to have some fun and meet new people.<br/><br/><b>Location</b>: Club Arsenal Market, [Pidvalna St 5](http://club.arsenalmarket.lviv.ua/uk/contacts/)<br/><br/>Free shot for all DevFest attendees included.<br/><br/>Don't forget to bring your badge.",
-        "track": {
-            "title": "Club Arsenal Market"
-        }
-    },
-    {
-        "id": 1007,
-        "title": "Conference closing and contest winners announcements",
-        "description": "Make sure you won't miss closing ceremony, all gifts from out sponsors and partners will find their owners during this session.",
-        "language": "uk",
-        "complexity": "",
-        "presentation": "",
-        "video": ""
-    },
-    {
         "id": 101,
         "title": "Portuguese GDGs for the masses",
         "description": "Google Developer Groups are a fundamental part of the outreach activities for developers...",
