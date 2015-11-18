@@ -38,7 +38,7 @@
         "id": 103,
         "title": "To be annouced",
         "description": "",
-        "speakers": [3],
+        "speakers": [6],
         "language": "en",
         "complexity": "Beginner",
         "presentation": "",
@@ -51,7 +51,7 @@
         "id": 104,
         "title": "To be annouced",
         "description": "",
-        "speakers": [4],
+        "speakers": [7],
         "language": "en",
         "complexity": "Beginner",
         "presentation": "",
@@ -75,28 +75,28 @@
     },
     {
         "id": 106,
-        "title": "To be annouced",
-        "description": "",
-        "speakers": [6],
+        "title": "From zero to the world. Building a global organisation from Portugal",
+        "description": "Inês is one of the founders of Startup Pirates a 8-day pre-acceleration program with a footprint in 20 countries around the world. Inês will be explaining how anyone can build organisations from scratch and think global from day one.",
+        "speakers": [3],
         "language": "en",
         "complexity": "Beginner",
         "presentation": "",
         "video": "",
         "tags": [
-            "Soon"
+            "startup", "pirates", "founder", "global"
         ]
     },
     {
         "id": 107,
-        "title": "To be annouced",
-        "description": "",
-        "speakers": [7],
+        "title": "Forgetting Android V.2",
+        "description": "Architecture is About Intent, not Frameworks. So in this talk we are gonna talk about how you can prepare your android application to use the android framework as a tool instead of cramming your app into their limited constraints. We are gonna focus on SOLID principles, and concepts like testability, independency of UI, decoupled code, etc, will take a fundamental part of this session.",
+        "speakers": [4],
         "language": "en",
         "complexity": "Beginner",
         "presentation": "",
         "video": "",
         "tags": [
-            "Soon"
+            "Android"
         ]
     },
     {
