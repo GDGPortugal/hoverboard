@@ -12,15 +12,15 @@ paper-button.colorful {
     color: #006600;
 }
 paper-button.white {
-    color: #FFFF00;
+    color: #FFFFFF;
 }
 paper-button[raised].colorful {
     background: #006600;
-    color: #FFFF00;
+    color: #FFFFFF;
 }
 paper-button[focused].colorful {
     background: #006600;
-    color: #FFFF00;
+    color: #FFFFFF;
 }
 a, .anchor-like {
     color: #006600;
