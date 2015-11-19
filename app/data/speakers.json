@@ -47,6 +47,7 @@
 },{
     "id": 3,
     "name": "Inês Santos",
+    "featured": true,
     "title": "",
     "company": "",
     "country": "Portugal",
@@ -56,6 +57,7 @@
 },{
     "id": 4,
     "name": "Jorge Barroso",
+    "featured": true,
     "title": "",
     "company": "",
     "country": "Spain",
