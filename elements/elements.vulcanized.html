@@ -32803,11 +32803,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 --web-rtc: #7B1FA2;
                 --kubernetes: #326DE6;
                 --v8-engine: #006064;
-                --gae: #FFC107;
+                --gdg: #FFC107;
                 --ndk: #4CAF50;
                 --ble: #1565C0;
                 --ci: #CDDC39;
-                --tv: #D32F2F;
+                --vr: #D32F2F;
                 --grpc: #607D8B;
                 --ux: #9C27B0;
                 --material-design: #009688;
@@ -33498,34 +33498,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     .photo-wrapper {
-        height: 200px;
-    }
-
-    .gallery-dialog,
-    .gallery-dialog > * {
-        margin: 0;
-        padding: 0;
-        background: transparent;
-    }
-
-    .navbar-overlay {
-        position: fixed !important;
-        background: rgba(0, 0, 0, 0.5) !important;
-        text-transform: uppercase;
-        z-index: 9;
-        color: #fff;
-    }
-
-    .open-photos {
-        background: rgba(0, 0, 0, .3);
-        color: #fff;
-        font-size: 21px;
-        opacity: 0;
-        transition: opacity .3s;
-    }
-
-    .open-photos:hover {
-        opacity: 1;
+        height: 1500px;
     }
 
     @media (min-width: 601px) {
@@ -33538,22 +33511,36 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
     </style>
     <template>
-        <div class="photo-wrapper layout horizontal">
+        <div class="photo-wrapper layout vertical-horizontal-xs">
             <div class="flex relative big">
                 <iron-image src="{{photos.big}}" class="placeholder-color fit" sizing="cover" preload="" fade=""></iron-image>
                 <!--<div class="open-photos layout vertical center-center fit pointer" on-tap="openGallery">
                     <span>Click here to view more photos</span>
                 </div>-->
             </div>
-            <div class="flex layout vertical">
+            <div class="flex layout horizontal-vertical">
                 <div class="flex relative">
                     <iron-image src="{{photos.small.0}}" class="placeholder-color fit" sizing="cover" preload="" fade=""></iron-image>
                     <!--<div class="open-photos layout vertical center-center fit pointer" on-tap="openGallery">
                         <span>Click here to view more photos</span>
                     </div>-->
                 </div>
-                <div class="flex relative hidden-xs">
+                <div class="flex relative">
                     <iron-image src="{{photos.small.1}}" class="placeholder-color fit" sizing="cover" preload="" fade=""></iron-image>
+                   <!-- <div class="open-photos layout vertical center-center fit pointer" on-tap="openGallery">
+                        <span>Click here to view more photos</span>
+                    </div>-->
+                </div>
+            </div>
+            <div class="flex layout vertical">
+                <div class="flex relative">
+                    <iron-image src="{{photos.small.2}}" class="placeholder-color fit" sizing="cover" preload="" fade=""></iron-image>
+                    <!--<div class="open-photos layout vertical center-center fit pointer" on-tap="openGallery">
+                        <span>Click here to view more photos</span>
+                    </div>-->
+                </div>
+                <div class="flex relative hidden-xs">
+                    <iron-image src="{{photos.small.3}}" class="placeholder-color fit" sizing="cover" preload="" fade=""></iron-image>
                    <!-- <div class="open-photos layout vertical center-center fit pointer" on-tap="openGallery">
                         <span>Click here to view more photos</span>
                     </div>-->
@@ -33580,7 +33567,7 @@ Polymer({
     attached: function() {
         this.photos = {
             big: '../images/backgrounds/porto.jpg',
-            small: ['../images/backgrounds/porto1.jpg', '../images/backgrounds/porto2.jpg']
+            small: ['../images/backgrounds/porto1.jpg', '../images/backgrounds/coimbra2.jpg', '../images/backgrounds/coimbra1.jpg', '../images/backgrounds/porto2.jpg']
         };
     },
     openGallery: function() {
@@ -35498,12 +35485,12 @@ Polymer({
                         <span>[[person.country]]</span>
                     </div>
                 </template>
-                <div class="card-content person-tags">
+                <!--<div class="card-content person-tags">
                     <span class="tags-label">Tags:</span>
                     <template is="dom-repeat" items="[[tags]]" as="tag">
                         <span class$="[[tag.tagClass]]">[[tag.name]]</span>
                     </template>
-                </div>
+                </div>-->
                 <template is="dom-repeat" items="[[person.badges]]" as="badge">
                     <a class="badge block" href="[[badge.link]]" target="_blank">[[badge.description]]</a>
                 </template>
@@ -35815,7 +35802,7 @@ Polymer({
                         </template>
                     </div>
                 </div>
-                <div id="sideMenu" class="side-menu layout vertical">
+                <!--<div id="sideMenu" class="side-menu layout vertical">
                     <paper-card class="filters">
                         <div class="card-content header">
                             <div class="title-text">Filters</div>
@@ -35823,14 +35810,14 @@ Polymer({
                         <div class="card-content">
                             <div id="tagFilter" class="selector-group layout horizontal-vertical wrap">
                                 <template is="dom-repeat" items="{{tags}}" as="filter">
-                                    <paper-checkbox class$="[[filter.className]]" on-change="_filter" checked="">[[filter.name]]</paper-checkbox>
+                                    <paper-checkbox class$="[[filter.className]]" on-change="_filter" checked>[[filter.name]]</paper-checkbox>
                                 </template>
                             </div>
                         </div>
                         <div class="card-content">
                             <div id="badgeFilter" class="selector-group layout horizontal-vertical">
                                 <template is="dom-repeat" items="[[badges]]" as="filter">
-                                    <paper-checkbox class$="[[filter.className]]" on-change="_filter" checked="">[[filter.name]]</paper-checkbox>
+                                    <paper-checkbox class$="[[filter.className]]" on-change="_filter" checked>[[filter.name]]</paper-checkbox>
                                 </template>
                             </div>
                         </div>
@@ -35838,7 +35825,7 @@ Polymer({
                             <paper-button on-tap="_toggleFilters">{{toggleFiltersButton.title}}</paper-button>
                         </div>
                     </paper-card>
-                </div>
+                </div>-->
             </div>
         </div>
         <paper-dialog id="personDialog" class="dialog-wrapper" with-backdrop="" modal$="{{smallScreen}}" on-iron-overlay-opened="_patchOverlay">
@@ -36220,13 +36207,13 @@ Polymer({
         lang: 'en'
     };
     /* jshint ignore:end */
-    setTimeout(function() {
+    /*setTimeout(function() {
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.async = true;
         script.src = 'https://2event.com/js/widget-tickets.js';
         document.getElementsByTagName('head')[0].appendChild(script);
-    },2000);
+    },2000);*/
 
     Polymer({
         is: 'tickets-block',

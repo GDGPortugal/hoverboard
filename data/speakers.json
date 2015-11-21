@@ -52,7 +52,7 @@
     "company": "",
     "country": "Portugal",
     "photoUrl": "../../images/people/inessantos.jpg",
-    "tags": ["TEDx", "startup"],
+    "tags": ["TEDx", "startup", "entrepreneurship"],
     "bio": "Inês is a 26-year old entrepreneur who has been globally recognized for her work as a startup accelerator and community builder. Despite her young age, she is the co-founder of multiple successful startup initiatives, including StartupX, Trojan Horse was a Unicorn, Startup Pirates, PortugalStartups.com and Startup Tour. She is also an avid TEDx organizer, a Global Shapers Lisbon member and one of the youngest ever graduates of Singularity University."
 },{
     "id": 4,
@@ -73,13 +73,13 @@
     ]
 },{
     "id": 2,
-    "name": "To be announced",
-    "title": "",
-    "company": "",
-    "country": "",
-    "photoUrl": "../../images/people/tobeconfirmed.png",
-    "tags": ["Soon"],
-    "bio": ""
+    "name": "Daniela Fontes",
+    "title": "Technical Director",
+    "company": "Mimicry Games",
+    "country": "Portugal",
+    "photoUrl": "../../images/people/daniela.jpg",
+    "tags": ["VR", "Virtual Reality"],
+    "bio": "Daniela is the Technical Director of Mimicry Games, currently working on the VR multiplayer game Captus. She's a computer scientist with a sweet spot for AI, who's very fond of wearing multiple hats from business development to gameplay programming. She is also a co-organizer of Portugal Virtual Reality Meetup, an event aimed at creating a local community of VR Developers and Enthusiasts."
 },{
     "id": 5,
     "name": "To be announced",
