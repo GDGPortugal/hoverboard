@@ -59,7 +59,7 @@ strong, b {
     background-size: cover !important;
 }
 .placeholder-color {
-    background-color: #3F51B5;
+    /*background-color: #3F51B5;*/
 }
 .gradient-overlay {
     position: absolute;
@@ -179,7 +179,7 @@ strong, b {
         padding-bottom: 40px;
     }
     .container paper-button {
-        padding-bottom: 0.54em;
+        /*padding-bottom: 0.54em;*/
     }
 }
 @media (min-width: 601px) {
