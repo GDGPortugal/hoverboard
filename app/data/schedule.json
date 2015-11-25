@@ -6,36 +6,36 @@
     }],
     "timeslots": [{
         "startTime": "09:00",
-        "endTime": "10:00",
+        "endTime": "09:45",
         "sessions": [
             [1001]
         ]
     }, {
-        "startTime": "10:00",
-        "endTime": "10:15",
+        "startTime": "09:45",
+        "endTime": "10:00",
         "sessions": [
             [101]
         ]
     }, {
-        "startTime": "10:15",
-        "endTime": "10:45",
+        "startTime": "10:00",
+        "endTime": "10:30",
         "sessions": [
             [102]
         ]
     }, {
-        "startTime": "10:45",
-        "endTime": "11:15",
+        "startTime": "10:30",
+        "endTime": "11:00",
         "sessions": [
             [103]
         ]
     }, {
-        "startTime": "11:15",
-        "endTime": "11:45",
+        "startTime": "11:00",
+        "endTime": "11:30",
         "sessions": [
             [104]
         ]
     }, {
-        "startTime": "11:45",
+        "startTime": "11:30",
         "endTime": "12:00",
         "sessions": [
             [1002]
