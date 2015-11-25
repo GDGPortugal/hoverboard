@@ -46,14 +46,14 @@
     }]
 },{
     "id": 3,
-    "name": "Inês Santos",
+    "name": "Rafael Pires",
     "featured": true,
-    "title": "",
-    "company": "",
+    "title": "Chief Pirate Officer",
+    "company": "Startup Pirates",
     "country": "Portugal",
-    "photoUrl": "../../images/people/inessantos.jpg",
-    "tags": ["TEDx", "startup", "entrepreneurship"],
-    "bio": "Inês is a 26-year old entrepreneur who has been globally recognized for her work as a startup accelerator and community builder. Despite her young age, she is the co-founder of multiple successful startup initiatives, including StartupX, Trojan Horse was a Unicorn, Startup Pirates, PortugalStartups.com and Startup Tour. She is also an avid TEDx organizer, a Global Shapers Lisbon member and one of the youngest ever graduates of Singularity University."
+    "photoUrl": "../../images/people/rafael.jpg",
+    "tags": ["startup", "entrepreneurship"],
+    "bio": "Curious tech guy exploring the entrepreneurship world, with a passion for design and photography! Co-founder of Startup X, a non-profit organization responsible for programs like Startup Pirates, Startup Pirates Enterprise and PortugalStartups.com. Enthusiastic about sharing ideas and experiences. Host at Porto Startup Coffee Meetup."
 },{
     "id": 4,
     "name": "Jorge Barroso",
