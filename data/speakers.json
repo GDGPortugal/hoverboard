@@ -74,6 +74,7 @@
 },{
     "id": 2,
     "name": "Daniela Fontes",
+    "featured": true,
     "title": "Technical Director",
     "company": "Mimicry Games",
     "country": "Portugal",
@@ -82,22 +83,36 @@
     "bio": "Daniela is the Technical Director of Mimicry Games, currently working on the VR multiplayer game Captus. She's a computer scientist with a sweet spot for AI, who's very fond of wearing multiple hats from business development to gameplay programming. She is also a co-organizer of Portugal Virtual Reality Meetup, an event aimed at creating a local community of VR Developers and Enthusiasts."
 },{
     "id": 5,
-    "name": "To be announced",
-    "title": "",
-    "company": "",
-    "country": "",
-    "photoUrl": "../../images/people/tobeconfirmed.png",
-    "tags": ["Soon"],
-    "bio": ""
+    "name": "Mário Moreira",
+    "featured": true,
+    "title": "Gestor da Divisão de Experimentação e Coordenação Tecnológica",
+    "company": "PT Inovação",
+    "country": "Portugal",
+    "photoUrl": "../../images/people/mariomoreira.jpg",
+    "tags": ["Angular"],
+    "bio": "Mário Moreira obteve o mestrado em Ciências da Computação pela Universidade do Minho em 1995 e a Licenciatura em Engenharia de Sistemas e Informática pela Universidade do Minho em 1993. Ingressou no Centro de Estudos de Telecomunicações (futura PT Inovação), ainda durante a licenciatura em 1993 onde esteve a desenvolver vários sistemas periciais baseados em técnicas de Inteligência Artificial. Passou por diversas áreas incluindo áreas de investigação, desenvolvimento de sistemas de gestão de redes e plataformas para redes móveis. Atualmente é Gestor da Divisão de Experimentação e Coordenação Tecnológica na direção de Coordenação Tecnológica e Inovação Exploratória, onde é responsável pela identificação dos processos, metodologias, ferramentas e tecnologias utilizadas transversalmente na PT Inovação.",
+    "socials": [
+        {
+            "name": "Google+",
+            "icon": "app-icons:gplus",
+            "link": "https://plus.google.com/u/0/+MarioMoreira0"
+        },
+        {
+            "name": "Twitter",
+            "icon": "app-icons:twitter",
+            "link": "https://twitter.com/mario_moreira"
+        }
+    ]
 },{
     "id": 6,
-    "name": "To be announced",
-    "title": "",
-    "company": "",
-    "country": "",
-    "photoUrl": "../../images/people/tobeconfirmed.png",
-    "tags": ["Soon"],
-    "bio": ""
+    "name": "Nuno Farinha",
+    "featured": true,
+    "title": "Team Leader e desenvolvedor de software de gestão de sistemas de rede",
+    "company": "PT Inovação",
+    "country": "Portugal",
+    "photoUrl": "../../images/people/nunofarinha.jpg",
+    "tags": ["Web"],
+    "bio": "Nuno é um desenvolvedor, analista e arquiteto de software C/C++ e Web. Desde 2006 que trabalha na PT Inovação e Sistemas tendo colaborado em projetos de desenvolvimento de software de gestão de elementos de rede. Divide atualmente o seu tempo entre desenvolvimento e gestão de equipa. Tem mais recentemente colaborado na renovação da interface gráfica de utilizador das aplicações de gestão de rede."
 },{
     "id": 7,
     "name": "To be announced",
@@ -109,6 +124,15 @@
     "bio": ""
 },{
     "id": 8,
+    "name": "To be announced",
+    "title": "",
+    "company": "",
+    "country": "",
+    "photoUrl": "../../images/people/tobeconfirmed.png",
+    "tags": ["Soon"],
+    "bio": ""
+},{
+    "id": 9,
     "name": "To be announced",
     "title": "",
     "company": "",
