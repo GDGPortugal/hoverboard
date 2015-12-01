@@ -11,7 +11,7 @@
     {
         "id": 101,
         "title": "Portuguese GDGs for the masses",
-        "description": "Google Developer Groups are a fundamental part of the outreach activities for developers...",
+        "description": "During the talk, we will show main achievements of Google Developers Groups and its role in technology promotion, innovation diffusion and social development. Examples of groups from around the world will highlight the power of this technological and social movement.",
         "speakers": [1],
         "language": "en",
         "complexity": "Beginner",
@@ -49,22 +49,22 @@
     },
     {
         "id": 104,
-        "title": "To be annouced",
-        "description": "",
+        "title": "Project Tango",
+        "description": "Yolanda Correia loves mobile, ubiquitous and pervasive systems, she wants to give a positive impact on people's lives with her work.<br>She is now developing applications for big companies with project Tango and will delight us with knowledge about it.",
         "speakers": [7],
         "language": "en",
         "complexity": "Beginner",
         "presentation": "",
         "video": "",
         "tags": [
-            "Soon"
+            "Tango"
         ]
     },
     {
         "id": 105,
-        "title": "To be annouced",
-        "description": "",
-        "speakers": [10],
+        "title": "UX Mobile",
+        "description": "User Experience and User Experience is tough not a world to take lightly, it requires a lot of experience and a keen eye so that the result of an application is seamless for the user. Teresa will tell us what us as developers should have attention for in UX/UI and that we should give it the attention it deserves.",
+        "speakers": [8],
         "language": "en",
         "complexity": "Beginner",
         "presentation": "",
@@ -97,19 +97,6 @@
         "video": "",
         "tags": [
             "Android"
-        ]
-    },
-    {
-        "id": 108,
-        "title": "To be annouced",
-        "description": "",
-        "speakers": [8],
-        "language": "en",
-        "complexity": "Beginner",
-        "presentation": "",
-        "video": "",
-        "tags": [
-            "Soon"
         ]
     }
 ]
