@@ -116,6 +116,7 @@
 },{
     "id": 7,
     "name": "Yolanda Correia",
+    "featured": true,
     "title": "Software Developer",
     "company": "Kwamecorp",
     "country": "Portugal",
@@ -125,6 +126,7 @@
 },{
     "id": 8,
     "name": "Teresa Deus",
+    "featured": true,
     "title": "Mobile UX & Strategy Designer",
     "company": "Wingman",
     "country": "Portugal",
