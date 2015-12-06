@@ -6,7 +6,9 @@
     },
     {
         "id": 1002,
-        "title": "Coffee break"
+        "title": "Coffee break",
+        "description": "During the talk, we will show main achievements of Google Developers Groups and its role in technology promotion, innovation diffusion and social development. Examples of groups from around the world will highlight the power of this technological and social movement.",
+        "speakers": [8]
     },
     {
         "id": 101,
@@ -62,8 +64,8 @@
     },
     {
         "id": 105,
-        "title": "UX Mobile",
-        "description": "User Experience and User Experience is tough not a world to take lightly, it requires a lot of experience and a keen eye so that the result of an application is seamless for the user. Teresa will tell us what us as developers should have attention for in UX/UI and that we should give it the attention it deserves.",
+        "title": "Geotagging and reality augmentation of a live video feed",
+        "description": "Airborne Projects is a startup that provides custom built solutions both in hardware and software for the UAV and aeronautics market.",
         "speakers": [8],
         "language": "en",
         "complexity": "Beginner",
