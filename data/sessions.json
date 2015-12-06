@@ -7,8 +7,8 @@
     {
         "id": 1002,
         "title": "Coffee break",
-        "description": "During the talk, we will show main achievements of Google Developers Groups and its role in technology promotion, innovation diffusion and social development. Examples of groups from around the world will highlight the power of this technological and social movement.",
-        "speakers": [8]
+        "description": "During the Coffee break, you will find some cool demos. Airborne Projects and Clube de Robótica da Universidade do Coimbra will be demonstrating drones, robots and a lot of cool projects.<br>Prepare to be amazed!",
+        "speakers": [8,10]
     },
     {
         "id": 101,
@@ -60,19 +60,6 @@
         "video": "",
         "tags": [
             "Tango"
-        ]
-    },
-    {
-        "id": 105,
-        "title": "Geotagging and reality augmentation of a live video feed",
-        "description": "Airborne Projects is a startup that provides custom built solutions both in hardware and software for the UAV and aeronautics market.",
-        "speakers": [8],
-        "language": "en",
-        "complexity": "Beginner",
-        "presentation": "",
-        "video": "",
-        "tags": [
-            "Soon"
         ]
     },
     {

@@ -128,14 +128,14 @@
     "name": "Paulo Neves",
     "company": "Airborne Projects",
     "country": "Portugal",
+    "photoUrl": "../../images/people/tobeconfirmed.png",
     "tags": ["Soon"],
     "bio": "Airborne Projects is a startup that provides custom built solutions both in hardware and software for the UAV and aeronautics market."
 },{
     "id": 10,
-    "name": "To be announced",
-    "title": "",
-    "company": "",
-    "country": "",
+    "name": "Cristiano Alves",
+    "company": "Clube de Robótica da Universidade de Coimbra",
+    "country": "Portugal",
     "photoUrl": "../../images/people/tobeconfirmed.png",
     "tags": ["Soon"],
     "bio": ""
